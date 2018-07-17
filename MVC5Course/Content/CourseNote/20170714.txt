@@ -1,0 +1,47 @@
+dynamic-linq
+
+★模型繫結
+把用戶端的資料綁定到 Controller 內 對應的 Action 參數中
+
+Modelstate 的值是由 ModelBinding 而來
+當畫面同時有 Modelstate 及 Model 時 會優先以 ModelState 的資料為主
+
+按下 Post 
+找 Router
+找 Controller，New Controller
+找 Action
+準備參數，開始 ModelBinding
+找 Value 寫入一個欄位值，進行輸入驗證
+模型驗證
+ModelBing 完成，得到 ModelState 
+執行 Action
+判斷 ModelState
+
+表單開發時，優先以 Controller 為主
+View 是依照 Controller 所輸出(回傳)的資料來處理如何呈現資料
+
+預先驗證 
+Action 之前就執行完成並提供給 Action 取得 Model Binding 後的結果(資料是否正確)
+
+延遲驗證
+
+AOP
+
+================ MVC 生命週期 加上 動作過濾器 =================
+Routing
+Controller
+    Model-Binding
+    OnAuthentication
+    OnAuthenticaltionChallenge
+    OnAuthorization
+    OnActionExecuting
+Action
+    OnActionExecuted
+    OnResultExecuting
+ActionResult
+    OnResultExecuted
+    OnExecption
+
+
+
+

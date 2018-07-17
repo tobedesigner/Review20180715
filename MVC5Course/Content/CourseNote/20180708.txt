@@ -1,0 +1,15 @@
+使用者對 Clients/Create 操作之後
+→ Router → new ClientController → 找到對應的 
+
+
+Repository
+
+Router
+1 比對瀏覽器傳來的 HTTP 要求
+2 用來產生 URL → 優化 SEO
+
+Glimps RouterDebugger
+
+萬用 content-type
+application/octet-stream
+
