@@ -1,0 +1,42 @@
+﻿@*
+    目前是將頁面的原始碼輸出成以下的格式
+
+    12345
+
+    1 2 3 4 5
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+
+    27507972
+*@
+
+@{ 
+    Layout = "";
+    //這是程式碼區塊
+    var data = new List<int>() { 1, 2, 3, 4, 5 };
+}
+
+@foreach (var item in data)
+{
+    @item;
+}
+
+@*Note：這邊因為Razor編譯的關係所以要換行需要連 2 個 Enter 鍵*@
+@foreach (var item in data)
+{
+    @(item + " ")
+}
+
+
+<ul>
+@foreach (var item in data)
+{
+  <li>@(item)</li>
+}
+</ul>
