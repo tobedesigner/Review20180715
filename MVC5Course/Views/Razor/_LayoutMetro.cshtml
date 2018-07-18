@@ -366,10 +366,12 @@
                 <ul class="breadcrumb">
                     <li>
                         <i class="icon-home"></i>
-                        <a href="index.html">Home</a>
+                        @Html.ActionLink("Home", "Index", "Home")
                         <i class="icon-angle-right"></i>
                     </li>
-                    <li><a href="#">Dashboard</a></li>
+                    <li>
+                        @RenderSection("breadcrumb", false)
+                    </li>
                 </ul>
 
                 @RenderBody();
