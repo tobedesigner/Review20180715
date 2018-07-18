@@ -514,6 +514,7 @@
     <Content Include="Views\Shared\_Layout2.cshtml" />
     <Content Include="Views\Razor\Index.cshtml" />
     <Content Include="Views\Razor\_ViewStart.cshtml" />
+    <Content Include="Views\Razor\Dashboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Base\" />

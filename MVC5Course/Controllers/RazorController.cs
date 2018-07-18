@@ -18,5 +18,11 @@ namespace MVC5Course.Controllers
             //30 隨堂測驗：練習透過 Razor 語法精準輸出指定格式
             return View();
         }
+
+        public ActionResult Dashboard()
+        {
+
+            return View();
+        }
     }
 }
